@@ -66,7 +66,7 @@ begin
         if (time_counter == 0) 
         begin
             current_state <= next_state;  // Move to the next state when counter hits zero       
-             case (current_state)
+            case (next_state)
                 NS_GREEN:  time_counter <= green_time;  // Reset counter for green time
                 NS_YELLOW: time_counter <= yellow_time;
                 EW_GREEN:  time_counter <= green_time;
